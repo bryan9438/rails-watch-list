@@ -1,0 +1,11 @@
+<%= render "components/navbar" %>
+<%= render "components/banner_new" %>
+
+<h1 class="top-text text-center">Check</h1>
+
+<div class="d-flex justify-content-center">
+  <%= simple_form_for(@list) do |f| %>
+    <%= f.input :name %> 
+    <%= f.submit "Create a List", class: "button-88" %>
+  <% end %>
+</div>
